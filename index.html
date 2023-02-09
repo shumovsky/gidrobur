@@ -1,12 +1,285 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- header -->
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <nav class="header__navigation">
+                <ul>
+                    <li>Главная</li>
+                    <li>Услуги</li>
+                    <li>О компании</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+            <div class="header__contact"></div>
+            <div class="header__contact_form"></div>
+        </div>
+    </header>
+    <!-- main` -->
+    <main class="main">
+        <!-- Primary -->
+        <section class="primiry__wrapper wrapper">
+            <h1 class="primiry__title">Бурение скважин</h1>
+            <p class="primary__promo">
+                Бурим с первого подхода. Готовая скважина у вас на участке за 1 день!
+            </p>
+            <p class="primaty__text">Быстро рассчитаем стоимость</p>
+            <button class="primary__button button">Оставить заявку</button>
+        </section>
+        <!-- Advantage -->
+        <section class="advantage__wrapper wrapper">
+            <div class="advantage__unit">
+                <p class="advantage__unit-title">Команда профессионалов</p>
+                <p>Большой опыт в работе и профессиональное оборудование.</p>
+            </div>
+            <div>
+                <p class="advantage__unit-title">Предоставим документы</p>
+                <p class="advantage__unit-title">
+                    Работаем по договору, просчитаем подробную смету.
+                </p>
+            </div>
+            <div>
+                <p class="advantage__unit-title">Качественные материалы</p>
+                <p class="advantage__unit-title">Срок службы скважины до 50 лет.</p>
+            </div>
+            <div>
+                <p class="advantage__unit-title">Гарантия 10 лет</p>
+                <p class="advantage__unit-title">Предоставляем гарантию 10 лет.</p>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="about">
+            <div class="about__wrapper wrapper">
+                <h3 class="about__title title">Работаем <span>под ключ</span></h3>
+                <div class="about__content">
+                    <div class="about__content_rectange">
+                        <p class="about__content_title">Бурение скважин</p>
+                        <p class="about__content_text">
+                            Не повредим ваш ландшафт. Бурим профессиональным оборудованием в
+                            том числе малогабаритной установкой TizarPro UDV-70. Мы работаем
+                            с любыми грунтами и гарантируем быструю и качественную работу.
+                            Готовая скважина за 1 день - это реально.
+                        </p>
+                    </div>
+                    <div class="about__content_rectange">
+                        <p class="about__content_title">Обустройство скважин</p>
+                        <p class="about__content_text">
+                            Избавим вас от забот по обустройству скважины. Сюда входят
+                            работы по монтажу кессона, насоса, оголовка скважины. Настройка
+                            системы, промывка, обсыпка и т.д. В работе используем только
+                            сертифицированные материалы.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Order -->
+        <section class="order">
+            <div class="order__wrapper wrapper">
+                <h3 class="order__title title">
+                    Закажите <span>бесплатный выезд</span> инженера
+                </h3>
+                <p class="order__text">
+                    Наш инженер БЕСПЛАТНО приедет к вам на участок, оценит масштаб
+                    работы, даст подробную консультацию, ориентировочно озвучит
+                    стоимость работ и сроки.
+                </p>
+                <div class="order__contact_form">
+                    <form id="form" action="/feedback/processing.php" enctype="multipart/form-data" novalidate>
+                        <input type="text" />
+                        <input type="text" />
+                        <button class="order__button button">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Price -->
+        <section class="price">
+            <h3 class="price__title title">
+                Из чего формируется <span>цена</span>
+            </h3>
+            <p class="price__text">
+                Мы изучаем каждый объект индивидуально, подбираем оптимальный вариант
+                для вашего участка и вашего бюджета.
+            </p>
+            <div class="price__content">
+                <div class="price__content_header">
+                    <p>Цена за 1 метр бурения от 65 руб.</p>
+                    <p>Работаем без предоплаты</p>
+                    <p>Без скрытых платежей</p>
+                </div>
+                <div class="price__content_description">
+                    <div class="">
+                        <p class="price__description_title">Что влияет на стоимость</p>
+                        <ul class="price__description_list">
+                            <li class="price__description_item">
+                                Глубина залегания водоносного горизонта
+                            </li>
+                            <li class="price__description_item">
+                                Способ бурения и используемая буровая техника
+                            </li>
+                            <li class="price__description_item">
+                                Используемые материалы: диаметр обсадных труб, качество
+                                скваженного фильтра.
+                            </li>
+                            <li class="price__description_item">
+                                От качества материалов будет зависить срок службы вашей
+                                скважины
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="price__description_title">В стоимость уже входит</p>
+                        <ul class="price__description_list">
+                            <li class="price__description_item">Выезд инженера</li>
+                            <li class="price__description_item">
+                                Подготовка участка к земляным работам
+                            </li>
+                            <li class="price__description_item">Обсадная труба</li>
+                            <li class="price__description_item">Фильтр</li>
+                            <li class="price__description_item">Бентонит</li>
+                            <li class="price__description_item">Георазведка</li>
+                            <li class="price__description_item">
+                                Обсыпка фильтра кварцевым песком
+                            </li>
+                            <li class="price__description_item">Работа бригады</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Depth -->
+        <section class="depth">
+            <div class="depth__wrapper wrapper">
+                <h3 class="depth__title title">
+                    Узнайте глубину залегания воды в вашем районе
+                </h3>
+                <p class="depth__text text">
+                    Укажите где находится ваш участок. Наш менеджер проведет анализ и
+                    перезвонит вам.
+                </p>
+                <form id="form" action="/feedback/processing.php" enctype="multipart/form-data" novalidate>
+                    <input type="text" />
+                    <input type="text" />
+                    <button class="order__button button">Оставить заявку</button>
+                </form>
+            </div>
+        </section>
+        <!-- Step -->
+        <section class="step">
+            <div class="step__wrapper wrapper">
+                <h3 class="step__title title">
+                    <span>Простые шаги</span>к собственной скважине
+                </h3>
+                <div class="spet__content">
+                    <div class="step__rectange">
+                        <p class="step__rectange_title"></p>
+                        <p class="step__rectange_text"></p>
+                    </div>
+                    <div class="step__rectange">
+                        <p class="step__rectange_title"></p>
+                        <p class="step__rectange_text"></p>
+                    </div>
+                    <div class="step__rectange">
+                        <p class="step__rectange_title"></p>
+                        <p class="step__rectange_text"></p>
+                    </div>
+                    <div class="step__rectange">
+                        <p class="step__rectange_title"></p>
+                        <p class="step__rectange_text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Review -->
+        <section class="review">
+            <div class="review__wrapper wrapper">
+                <h3 class="review__title title"><span>Отзывы</span> о нашей работе</h3>
+                <div class="review__video_slider"></div>
+                <div class="review__text_slider">
+                    <div class="review__text_slider-content">
+                        <div class="review__text_slider-rectange">
+                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                                Замерщик ( к
+                                сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и подсказывал
+                                все нюансы с которыми мы могли столкнуться. Остались довольны произведенной работой.</p>
+                        </div>
+                        <div class="review__text_slider-rectange">
+                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                                Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
+                                подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
+                                работой.</p>
+                            <p class="review__slider_name">Валерка.</p>
+                            <p class="review__slider_city">Деревня Каменная горка</p>
+                        </div>
+                        <div class="review__text_slider-rectange">
+                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                                Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
+                                подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
+                                работой.</p>
+                            <p class="review__slider_name">Валерка.</p>
+                            <p class="review__slider_city">Деревня Каменная горка</p>
+                        </div>
+                        <div class="review__text_slider-rectange">
+                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                                Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
+                                подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
+                                работой.</p>
+                            <p class="review__slider_name">Валерка.</p>
+                            <p class="review__slider_city">Деревня Каменная горка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Question -->
+        <section class="question">
+            <div class="question__wrapper wrapper">
+                <h3 class="question__title title">Популярные <span>вопросы</span></h3>
+                <div class="question__accordion">
+                    <div class="question__accordion_content">
+                        <p class="question__accordion_title">Когда лучше бурить скважину?</p>
+                        <p class="question__accordion_text">Мы бурим скважины круглый год.
+                            Однако, лучшим временем для добычи воды считается зима (до -15℃). Во-первых это очень удобно
+                            при заезде буровой техники, во-вторых цена на бурение значительно ниже.
+                            Весной, летом и осенью бурят в сухой сезон. Когда идут обильные дожди, поднимается уровень
+                            верховодки и буровой технике сложно проехать по земле, не превращая участок в грязь.
+                            Цена на бурение в сезон обычно поднимается, так как повышается спрос. </p>
+                    </div>
+                    <div>
+                        <p class="question__accordion_title">Как выбрать место для скважины?</p>
+                        <p class="question__accordion_text"></p>
+                    </div>
+                    <div>
+                        <p class="question__accordion_title">Какие трубы используются для скважины?</p>
+                        <p class="question__accordion_text"></p>
+                    </div>
+                    <div>
+                        <p class="question__accordion_title">Какое оборудование в работе мы используем?</p>
+                        <p class="question__accordion_text"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__contact"></div>
+            <div class="footer__working-mode"></div>
+            <div class="footer__form"></div>
+        </div>
+    </footer>
 </body>
+
 </html>
