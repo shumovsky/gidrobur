@@ -1,0 +1,42 @@
+main {
+    background: url(./../img/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: 75.5%;
+    background-position: center;
+    background-position-y: -4%;
+}
+
+.primary {
+
+    background-size: cover;
+    padding-top: 8.4rem;
+    padding-bottom: 20rem;
+}
+
+.primary__title {
+    font-weight: 700;
+    font-size: 6.7rem;
+    line-height: 6.4rem;
+    color: $color-text;
+    margin-bottom: 0;
+}
+
+.primary__promo {
+    max-width: 65rem;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    margin-top: 1.5rem;
+}
+
+.primaty__text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-top: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.primary__button {
+    padding: 1.1rem 4.7rem;
+}

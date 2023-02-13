@@ -5,7 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Бурение скважин</title>
 </head>
 
 <body>
@@ -13,48 +18,75 @@
     <header class="header">
         <div class="header__wrapper wrapper">
             <nav class="header__navigation">
-                <ul>
-                    <li>Главная</li>
-                    <li>Услуги</li>
-                    <li>О компании</li>
-                    <li>Контакты</li>
+                <ul class="header__navigation_list">
+                    <li class="header__navigation_link"><a href="">Главная</a></li>
+                    <li class="header__navigation_link"><a href="">Услуги</a></li>
+                    <li class="header__navigation_link"><a href="">О компании</a></li>
+                    <li class="header__navigation_link"><a href="">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="header__contact"></div>
-            <div class="header__contact_form"></div>
+            <div class="header__contact"><a href="tel:+375447000415"><img src="./src/img/phone.svg" alt="phone"> +375
+                    (44) 7000 415</a>
+                <a href=""><img src="./src/img/viber.svg" alt=""></a>
+                <a href=""><img src="./src/img/telegram.svg" alt=""></a>
+            </div>
+            <div class="header__contact_form">
+                <form id="form" class="header_form" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input class="input_text" type="text" />
+                    <button class="order__button_header button">Заказать звонок</button>
+                </form>
+            </div>
         </div>
     </header>
     <!-- main` -->
     <main class="main">
         <!-- Primary -->
-        <section class="primiry__wrapper wrapper">
-            <h1 class="primiry__title">Бурение скважин</h1>
-            <p class="primary__promo">
-                Бурим с первого подхода. Готовая скважина у вас на участке за 1 день!
-            </p>
-            <p class="primaty__text">Быстро рассчитаем стоимость</p>
-            <button class="primary__button button">Оставить заявку</button>
+        <section class="primary">
+            <div class="primiry__wrapper wrapper">
+                <h1 class="primary__title">Бурение скважин</h1>
+                <p class="primary__promo">
+                    Бурим с первого подхода.<br> Готовая скважина у вас на участке за 1 день!
+                </p>
+                <p class="primaty__text">Быстро рассчитаем стоимость</p>
+                <button class="primary__button button">Оставить заявку</button>
+            </div>
+
         </section>
         <!-- Advantage -->
-        <section class="advantage__wrapper wrapper">
-            <div class="advantage__unit">
-                <p class="advantage__unit-title">Команда профессионалов</p>
-                <p>Большой опыт в работе и профессиональное оборудование.</p>
+        <section class="advantage">
+            <div class="advantage__wrapper wrapper">
+                <div class="advantage__unit">
+                    <img src="./src/img/boer.png" alt="Бур">
+                    <div>
+                        <p class="advantage__unit-title">Команда профессионалов</p>
+                        <p class="advantage__unit-text">Большой опыт в работе и профессиональное оборудование.</p>
+                    </div>
+                </div>
+                <div class="advantage__unit">
+                    <img src="./src/img/docs.png" alt="Документы">
+                    <div>
+                        <p class="advantage__unit-title">Предоставим документы</p>
+                        <p class="advantage__unit-text">Работаем по договору, просчитаем подробную смету.</p>
+                    </div>
+                </div>
+                <div class="advantage__unit">
+                    <img src="./src/img/pipes.png" alt="Трубы">
+                    <div>
+                        <p class="advantage__unit-title">Качественные материалы</p>
+                        <p class="advantage__unit-text">Срок службы скважины до 50 лет.</p>
+                    </div>
+                </div>
+                <div class="advantage__unit">
+                    <img src="./src/img/guarantee.png" alt="Гарантия">
+                    <div>
+                        <p class="advantage__unit-title">Гарантия 10 лет</p>
+                        <p class="advantage__unit-text">Предоставляем гарантию 10 лет.</p>
+                    </div>
+
+                </div>
             </div>
-            <div>
-                <p class="advantage__unit-title">Предоставим документы</p>
-                <p class="advantage__unit-title">
-                    Работаем по договору, просчитаем подробную смету.
-                </p>
-            </div>
-            <div>
-                <p class="advantage__unit-title">Качественные материалы</p>
-                <p class="advantage__unit-title">Срок службы скважины до 50 лет.</p>
-            </div>
-            <div>
-                <p class="advantage__unit-title">Гарантия 10 лет</p>
-                <p class="advantage__unit-title">Предоставляем гарантию 10 лет.</p>
-            </div>
+
         </section>
         <!-- About -->
         <section class="about">
@@ -62,22 +94,27 @@
                 <h3 class="about__title title">Работаем <span>под ключ</span></h3>
                 <div class="about__content">
                     <div class="about__content_rectange">
-                        <p class="about__content_title">Бурение скважин</p>
-                        <p class="about__content_text">
-                            Не повредим ваш ландшафт. Бурим профессиональным оборудованием в
-                            том числе малогабаритной установкой TizarPro UDV-70. Мы работаем
-                            с любыми грунтами и гарантируем быструю и качественную работу.
-                            Готовая скважина за 1 день - это реально.
-                        </p>
+                        <div>
+                            <p class="about__content_title">Бурение скважин</p>
+                            <p class="about__content_text">
+                                Не повредим ваш ландшафт. Бурим профессиональным оборудованием в
+                                том числе малогабаритной установкой TizarPro UDV-70. Мы работаем
+                                с любыми грунтами и гарантируем быструю и качественную работу.
+                                Готовая скважина за 1 день - это реально.
+                            </p>
+                        </div>
                     </div>
                     <div class="about__content_rectange">
-                        <p class="about__content_title">Обустройство скважин</p>
-                        <p class="about__content_text">
-                            Избавим вас от забот по обустройству скважины. Сюда входят
-                            работы по монтажу кессона, насоса, оголовка скважины. Настройка
-                            системы, промывка, обсыпка и т.д. В работе используем только
-                            сертифицированные материалы.
-                        </p>
+                        <div>
+                            <p class="about__content_title">Обустройство скважин</p>
+                            <p class="about__content_text">
+                                Избавим вас от забот по обустройству скважины. Сюда входят
+                                работы по монтажу кессона, насоса, оголовка скважины. Настройка
+                                системы, промывка, обсыпка и т.д. В работе используем только
+                                сертифицированные материалы.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -89,7 +126,7 @@
                     Закажите <span>бесплатный выезд</span> инженера
                 </h3>
                 <p class="order__text">
-                    Наш инженер БЕСПЛАТНО приедет к вам на участок, оценит масштаб
+                    Наш инженер <span>БЕСПЛАТНО</span> приедет <br> к вам на участок, оценит масштаб
                     работы, даст подробную консультацию, ориентировочно озвучит
                     стоимость работ и сроки.
                 </p>
@@ -104,58 +141,61 @@
         </section>
         <!-- Price -->
         <section class="price">
-            <h3 class="price__title title">
-                Из чего формируется <span>цена</span>
-            </h3>
-            <p class="price__text">
-                Мы изучаем каждый объект индивидуально, подбираем оптимальный вариант
-                для вашего участка и вашего бюджета.
-            </p>
-            <div class="price__content">
-                <div class="price__content_header">
-                    <p>Цена за 1 метр бурения от 65 руб.</p>
-                    <p>Работаем без предоплаты</p>
-                    <p>Без скрытых платежей</p>
-                </div>
-                <div class="price__content_description">
-                    <div class="">
-                        <p class="price__description_title">Что влияет на стоимость</p>
-                        <ul class="price__description_list">
-                            <li class="price__description_item">
-                                Глубина залегания водоносного горизонта
-                            </li>
-                            <li class="price__description_item">
-                                Способ бурения и используемая буровая техника
-                            </li>
-                            <li class="price__description_item">
-                                Используемые материалы: диаметр обсадных труб, качество
-                                скваженного фильтра.
-                            </li>
-                            <li class="price__description_item">
-                                От качества материалов будет зависить срок службы вашей
-                                скважины
-                            </li>
-                        </ul>
+            <div class="price__wrapper wrapper">
+                <h3 class="price__title title">
+                    Из чего формируется <span>цена</span>
+                </h3>
+                <p class="price__text">
+                    Мы изучаем каждый объект индивидуально, подбираем оптимальный вариант
+                    для вашего участка и вашего бюджета.
+                </p>
+                <div class="price__content">
+                    <div class="price__content_header">
+                        <p>Цена за 1 метр бурения от 65 руб.</p>
+                        <p>Работаем без предоплаты</p>
+                        <p>Без скрытых платежей</p>
                     </div>
-                    <div class="">
-                        <p class="price__description_title">В стоимость уже входит</p>
-                        <ul class="price__description_list">
-                            <li class="price__description_item">Выезд инженера</li>
-                            <li class="price__description_item">
-                                Подготовка участка к земляным работам
-                            </li>
-                            <li class="price__description_item">Обсадная труба</li>
-                            <li class="price__description_item">Фильтр</li>
-                            <li class="price__description_item">Бентонит</li>
-                            <li class="price__description_item">Георазведка</li>
-                            <li class="price__description_item">
-                                Обсыпка фильтра кварцевым песком
-                            </li>
-                            <li class="price__description_item">Работа бригады</li>
-                        </ul>
+                    <div class="price__content_description">
+                        <div class="">
+                            <p class="price__description_title">Что влияет на стоимость</p>
+                            <ul class="price__description_list">
+                                <li class="price__description_item">
+                                    Глубина залегания водоносного горизонта
+                                </li>
+                                <li class="price__description_item">
+                                    Способ бурения и используемая буровая техника
+                                </li>
+                                <li class="price__description_item">
+                                    Используемые материалы: диаметр обсадных труб, качество
+                                    скваженного фильтра.
+                                </li>
+                                <li class="price__description_item">
+                                    От качества материалов будет зависить срок службы вашей
+                                    скважины
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p class="price__description_title">В стоимость уже входит</p>
+                            <ul class="price__description_list">
+                                <li class="price__description_item">Выезд инженера</li>
+                                <li class="price__description_item">
+                                    Подготовка участка к земляным работам
+                                </li>
+                                <li class="price__description_item">Обсадная труба</li>
+                                <li class="price__description_item">Фильтр</li>
+                                <li class="price__description_item">Бентонит</li>
+                                <li class="price__description_item">Георазведка</li>
+                                <li class="price__description_item">
+                                    Обсыпка фильтра кварцевым песком
+                                </li>
+                                <li class="price__description_item">Работа бригады</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- Depth -->
         <section class="depth">

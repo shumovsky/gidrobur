@@ -1,0 +1,23 @@
+{
+  "name": "gidrobur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shumovsky/gidrobur.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shumovsky/gidrobur/issues"
+  },
+  "homepage": "https://github.com/shumovsky/gidrobur#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

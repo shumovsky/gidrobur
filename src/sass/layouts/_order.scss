@@ -1,0 +1,21 @@
+.order__wrapper {
+    background: url(./../img/order-bg.png);
+    padding-top: 22rem;
+}
+
+.order__text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    max-width: 67rem;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+
+.order__contact_form {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20rem;
+}

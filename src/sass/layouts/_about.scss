@@ -1,0 +1,42 @@
+.about__wrapper {
+    padding-top: 2rem;
+    background: url(./../img/work.png);
+    background-position-y: 172%;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: repeat(2, 41.6rem);
+    justify-content: space-around;
+    padding-top: 45.8rem;
+
+}
+
+.about__content_rectange {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+    border-radius: 10px;
+    padding: 1.6rem 1.4rem;
+
+    >div {
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+        border-radius: 10px;
+        padding: 1px 24px;
+        height: 100%;
+    }
+}
+
+.about__content_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 0;
+}
+
+.about__content_text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-top: 1.4rem;
+}

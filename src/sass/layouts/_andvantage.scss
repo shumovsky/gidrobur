@@ -1,0 +1,29 @@
+.advantage__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantage__unit {
+    display: flex;
+    flex-basis: 21%;
+    gap: 2.8rem;
+
+    img {
+        width: auto;
+        height: 37%;
+        margin-top: 2rem;
+    }
+}
+
+
+.advantage__unit-title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.advantage__unit-text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
