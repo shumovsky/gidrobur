@@ -122,21 +122,24 @@
         <!-- Order -->
         <section class="order">
             <div class="order__wrapper wrapper">
-                <h3 class="order__title title">
-                    Закажите <span>бесплатный выезд</span> инженера
-                </h3>
-                <p class="order__text">
-                    Наш инженер <span>БЕСПЛАТНО</span> приедет <br> к вам на участок, оценит масштаб
-                    работы, даст подробную консультацию, ориентировочно озвучит
-                    стоимость работ и сроки.
-                </p>
-                <div class="order__contact_form">
-                    <form id="form" action="/feedback/processing.php" enctype="multipart/form-data" novalidate>
+                <div class="order__content">
+                    <h3 class="order__title title">
+                        Закажите <span>бесплатный выезд</span> инженера
+                    </h3>
+                    <p class="order__text">
+                        Наш инженер <span>БЕСПЛАТНО</span> приедет <br> к вам на участок, оценит масштаб
+                        работы, даст подробную консультацию, ориентировочно озвучит
+                        стоимость работ и сроки.
+                    </p>
+                    <form class="order__contact_form" id="form" action="/feedback/processing.php"
+                        enctype="multipart/form-data" novalidate>
                         <input type="text" />
                         <input type="text" />
                         <button class="order__button button">Оставить заявку</button>
                     </form>
+
                 </div>
+
             </div>
         </section>
         <!-- Price -->

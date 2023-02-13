@@ -38,6 +38,7 @@
     display: grid;
     grid-template-columns: repeat(3, max-content);
     justify-content: space-evenly;
+    align-items: center;
 
     a {
         color: $color-light;
@@ -54,8 +55,8 @@
 }
 
 .header_form {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 48% 48%;
     justify-content: space-between;
 }
 
