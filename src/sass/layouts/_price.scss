@@ -1,0 +1,21 @@
+.price__text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.price__content_header {
+    display: grid;
+    grid-template-columns: 49% 25% 25%;
+}
+
+.price__content_header_main {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: $bg-color;
+}

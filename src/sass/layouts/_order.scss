@@ -23,7 +23,7 @@
 
 .order__contact_form {
     display: grid;
-    grid-template-columns: repeat(3, minmax(max-content, 22.4rem));
+    grid-template-columns: 27.5% 30% 30%;
     justify-content: space-around;
     padding-bottom: 20rem;
 }

@@ -1,7 +1,10 @@
+.header {
+    background-color: $bg-color;
+}
+
 .header__wrapper {
     display: grid;
     grid-template-columns: 41% 24% 31%;
-    background-color: $bg-color;
     padding: 3.4rem 0 2.6rem;
     align-items: center;
 }
