@@ -1,12 +1,11 @@
 .about {
-    background: url(./../img/work.png);
-    background-position-y: 110%;
-    background-size: 100%;
+    background: url(./../img/bg-about.png), url(./../img/work.png) center no-repeat;
+    background-size: 100%, cover;
+    background-position-y: 0, -24%;
 }
 
 .about__wrapper {
-    padding-top: 2rem;
-    ;
+    padding-top: .4rem;
 }
 
 .about__content {

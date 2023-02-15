@@ -1,0 +1,27 @@
+.depth {
+    padding-top: 16.6rem;
+    background: url(./../img/bg-depth.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.depth__title {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.depth__text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.depth__form {
+    display: grid;
+    grid-template-columns: 24% 15.5% 15.5% 17%;
+    justify-content: center;
+    padding-top: 4.8rem;
+    grid-column-gap: 2rem;
+    padding-bottom: 14.8rem;
+}

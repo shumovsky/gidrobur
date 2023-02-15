@@ -17,6 +17,7 @@
     <!-- header -->
     <header class="header">
         <div class="header__wrapper wrapper">
+            <a class="logo" href="#"><img class="logo__img" src="src/img/logo.png" alt="Логотип"></a>
             <nav class="header__navigation">
                 <ul class="header__navigation_list">
                     <li class="header__navigation_link"><a href="">Главная</a></li>
@@ -43,7 +44,7 @@
     <main class="main">
         <!-- Primary -->
         <section class="primary">
-            <div class="primiry__wrapper wrapper">
+            <div class="primary__wrapper wrapper">
                 <h1 class="primary__title">Бурение скважин</h1>
                 <p class="primary__promo">
                     Бурим с первого подхода.<br> Готовая скважина у вас на участке за 1 день!
@@ -133,8 +134,8 @@
                     </p>
                     <form class="order__contact_form" id="form" action="/feedback/processing.php"
                         enctype="multipart/form-data" novalidate>
-                        <input type="text" />
-                        <input type="text" />
+                        <input type="text" placeholder="Ваше имя" />
+                        <input type="text" placeholder="+375 _ _ _ _ _ _ _" />
                         <button class="order__button button">Оставить заявку</button>
                     </form>
 
@@ -161,7 +162,7 @@
                             платежей</p>
                     </div>
                     <div class="price__content_description">
-                        <div class="">
+                        <div class="price__content_left">
                             <p class="price__description_title">Что влияет на стоимость</p>
                             <ul class="price__description_list">
                                 <li class="price__description_item">
@@ -212,7 +213,9 @@
                     Укажите где находится ваш участок. Наш менеджер проведет анализ и
                     перезвонит вам.
                 </p>
-                <form id="form" action="/feedback/processing.php" enctype="multipart/form-data" novalidate>
+                <form class="depth__form" id="form" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input type="text" />
                     <input type="text" />
                     <input type="text" />
                     <button class="order__button button">Оставить заявку</button>

@@ -1,17 +1,22 @@
 main {
     background: url(./../img/bg-main.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    background-position-y: -4%;
+    background-size: contain;
 }
 
 .primary {
-
-    background-size: cover;
-    padding-top: 8.4rem;
-    padding-bottom: 20rem;
+    background-size: contain;
+    padding-top: 9rem;
+    padding-bottom: 25rem;
+    background-image: url(./../img/car.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
+
+.primary__wrapper {
+    padding-left: 7rem;
+}
+
 
 .primary__title {
     font-weight: 700;
@@ -26,15 +31,15 @@ main {
     font-weight: 600;
     font-size: 2.8rem;
     line-height: 4rem;
-    margin-top: 1.5rem;
+    margin-top: 1.9rem;
+    margin-bottom: 0;
 }
 
 .primaty__text {
     font-weight: 400;
     font-size: 2rem;
     line-height: 4rem;
-    padding-top: 2.4rem;
-    margin-bottom: 1.2rem;
+    margin: 1.4rem 0 1.2rem 0;
 }
 
 .primary__button {

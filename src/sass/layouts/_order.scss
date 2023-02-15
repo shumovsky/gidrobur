@@ -1,6 +1,11 @@
+.order {
+    background: url(./../img/bg-order.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 .order__wrapper {
-    background: url(./../img/order-bg.png);
-    padding: 22rem 0 3rem 0;
+    padding: 22rem 0 2rem 0;
 }
 
 .order__content {
@@ -9,7 +14,7 @@
 }
 
 .order__title {
-    padding-bottom: 1.4rem;
+    padding-bottom: 1rem;
 }
 
 .order__text {
