@@ -1,0 +1,54 @@
+.step__wrapper {
+    padding-top: 3.6rem;
+}
+
+.step__title {
+    max-width: 46.5rem;
+    margin: 0 auto;
+}
+
+.spet__content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 315px));
+    padding-top: 8.4rem;
+    justify-content: space-between;
+}
+
+.step__rectange {
+    position: relative;
+}
+
+.step__rectange_img {
+    padding-top: 20px;
+    padding-left: 0.8rem;
+}
+
+.step-counter {
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-light;
+    background: $bg-color;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding-top: 3px;
+    text-align: center;
+    left: 2%;
+    top: 4%;
+}
+
+.step__rectange_title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-left: .8rem;
+}
+
+.step__rectange_text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-left: .8rem;
+}
