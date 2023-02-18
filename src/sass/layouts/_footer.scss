@@ -1,0 +1,88 @@
+.footer {
+    background: $bg-color;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+    padding-top: 5rem;
+    align-items: baseline;
+}
+
+.footer__contact {
+    color: $color-light;
+}
+
+.footer__contact_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 0;
+}
+
+.footer__contact_link {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    a {
+        text-decoration: none;
+        color: $color-light;
+        padding-right: 6px;
+
+        &:hover {
+            color: $color-aditional;
+        }
+    }
+
+    img {
+        vertical-align: bottom;
+    }
+}
+
+.footer__contact_adress {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    max-width: 28rem;
+}
+
+.footer__contact_unp {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    max-width: 20rem;
+}
+
+.footer__working-mode {
+    color: $color-light;
+}
+
+.footer__working_time {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+.footer__working_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.footer__form {
+    color: $color-light;
+}
+
+.footer__form_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.footer__form_text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}

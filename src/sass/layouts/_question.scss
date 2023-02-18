@@ -1,5 +1,8 @@
 .question {
     padding-top: 11rem;
+    background: url(./../img/bg-question.png);
+    padding-bottom: 17rem;
+    background-position: bottom;
 }
 
 .question__accordion {
@@ -14,7 +17,11 @@
     box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
     padding-left: 45px;
     padding-top: 1px;
-    margin-bottom: 1.8rem
+    margin-bottom: 1.8rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .question__accordion_title {

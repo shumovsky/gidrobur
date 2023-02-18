@@ -671,6 +671,18 @@ main {
   border-radius: 0 0 10px 10px;
   position: relative;
 }
+.price__content_description::before {
+  content: "";
+  display: block;
+  box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+  border-radius: 10px;
+  position: absolute;
+  width: 97%;
+  height: 94%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .price__content_left {
   position: relative;
@@ -848,6 +860,9 @@ main {
 
 .question {
   padding-top: 11rem;
+  background: url(./../img/bg-question.png);
+  padding-bottom: 17rem;
+  background-position: bottom;
 }
 
 .question__accordion {
@@ -863,6 +878,9 @@ main {
   padding-left: 45px;
   padding-top: 1px;
   margin-bottom: 1.8rem;
+}
+.question__accordion_content:last-child {
+  margin-bottom: 0;
 }
 
 .question__accordion_title {
@@ -891,6 +909,92 @@ main {
 
 .accordion-hidden {
   display: none;
+}
+
+.footer {
+  background: #60B6F8;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+  padding-top: 5rem;
+  align-items: baseline;
+}
+
+.footer__contact {
+  color: #fff;
+}
+
+.footer__contact_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin: 0;
+}
+
+.footer__contact_link {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+.footer__contact_link a {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 6px;
+}
+.footer__contact_link a:hover {
+  color: #FD9900;
+}
+.footer__contact_link img {
+  vertical-align: bottom;
+}
+
+.footer__contact_adress {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  max-width: 28rem;
+}
+
+.footer__contact_unp {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  max-width: 20rem;
+}
+
+.footer__working-mode {
+  color: #fff;
+}
+
+.footer__working_time {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+.footer__working_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.footer__form {
+  color: #fff;
+}
+
+.footer__form_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.footer__form_text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
