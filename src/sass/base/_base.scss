@@ -31,6 +31,9 @@ span {
     color: $color-aditional;
 }
 
+::placeholder {
+    text-align: center;
+}
 
 .button {
     background: $color-button;
@@ -42,7 +45,7 @@ span {
     line-height: 1.9rem;
     cursor: pointer;
     filter: drop-shadow(3px 4px 6px rgba(238, 148, 10, 0.5));
-
+    @extend %transition;
 }
 
 input {

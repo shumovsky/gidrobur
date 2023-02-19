@@ -1,5 +1,6 @@
 .footer {
     background: $bg-color;
+    padding-bottom: 6rem;
 }
 
 .footer__wrapper {
@@ -79,10 +80,19 @@
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.2rem;
+    margin-bottom: .6rem;
 }
 
 .footer__form_text {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
+    margin-top: 0;
+}
+
+.footer__form_contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 32rem;
+    row-gap: .6rem;
 }

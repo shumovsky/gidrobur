@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <script src="src/js/main.js" defer></script>
     <title>Бурение скважин</title>
 </head>
 
@@ -20,10 +20,12 @@
             <a class="logo" href="#"><img class="logo__img" src="src/img/logo.png" alt="Логотип"></a>
             <nav class="header__navigation">
                 <ul class="header__navigation_list">
-                    <li class="header__navigation_link"><a href="">Главная</a></li>
-                    <li class="header__navigation_link"><a href="">Услуги</a></li>
-                    <li class="header__navigation_link"><a href="">О компании</a></li>
-                    <li class="header__navigation_link"><a href="">Контакты</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link active_link"
+                            href="#">Главная</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link" href="#">Услуги</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link" href="#">О
+                            компании</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header__contact"><a href="tel:+375447000415"><img src="./src/img/phone.svg" alt="phone"> +375
@@ -34,7 +36,7 @@
             <div class="header__contact_form">
                 <form id="form" class="header_form" action="/feedback/processing.php" enctype="multipart/form-data"
                     novalidate>
-                    <input class="input_text" type="text" />
+                    <input class="header__input_text" type="text" placeholder="Ваше имя" />
                     <button class="order__button_header button">Заказать звонок</button>
                 </form>
             </div>
@@ -213,11 +215,11 @@
                     Укажите где находится ваш участок. Наш менеджер проведет анализ и
                     перезвонит вам.
                 </p>
-                <form class="depth__form" id="form" action="/feedback/processing.php" enctype="multipart/form-data"
+                <form class="depth__form" id="" action="/feedback/processing.php" enctype="multipart/form-data"
                     novalidate>
-                    <input type="text" />
-                    <input type="text" />
-                    <input type="text" />
+                    <input type="text" placeholder="Населенный пункт" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="+ 375 __ ___ __ __" />
                     <button class="order__button button">Оставить заявку</button>
                 </form>
             </div>
@@ -311,7 +313,8 @@
                 <div class="question__accordion">
                     <div class="question__accordion_content">
                         <p class="question__accordion_title">Когда лучше бурить скважину? <img
-                                class="question__accordion_img" src="src/img/accordion.svg" alt="Кнопка"></p>
+                                class="question__accordion_img question_select" src="src/img/accordion.svg"
+                                alt="Кнопка"></p>
                         <p class="question__accordion_text">Мы бурим скважины круглый год. <br>
                             <br>
                             Однако, лучшим временем для добычи воды считается зима (до -15℃). Во-первых это очень удобно
@@ -328,17 +331,47 @@
                         <p class="question__accordion_title">Как выбрать место для скважины?
                             <img class="question__accordion_img" src="src/img/accordion.svg" alt="Кнопка">
                         </p>
-                        <p class="question__accordion_text accordion-hidden"></p>
+                        <p class="question__accordion_text accordion-hidden">Мы бурим скважины круглый год. <br>
+                            <br>
+                            Однако, лучшим временем для добычи воды считается зима (до -15℃). Во-первых это очень удобно
+                            при заезде буровой техники, во-вторых цена на бурение значительно ниже. <br>
+                            <br>
+
+                            Весной, летом и осенью бурят в сухой сезон. Когда идут обильные дожди, поднимается уровень
+                            верховодки и буровой технике сложно проехать по земле, не превращая участок в грязь.
+                            <br> <br>
+                            Цена на бурение в сезон обычно поднимается, так как повышается спрос.
+                        </p>
                     </div>
                     <div class="question__accordion_content">
                         <p class="question__accordion_title">Какие трубы используются для скважины? <img
                                 class="question__accordion_img" src="src/img/accordion.svg" alt="Кнопка"></p>
-                        <p class="question__accordion_text accordion-hidden"></p>
+                        <p class="question__accordion_text accordion-hidden">Мы бурим скважины круглый год. <br>
+                            <br>
+                            Однако, лучшим временем для добычи воды считается зима (до -15℃). Во-первых это очень удобно
+                            при заезде буровой техники, во-вторых цена на бурение значительно ниже. <br>
+                            <br>
+
+                            Весной, летом и осенью бурят в сухой сезон. Когда идут обильные дожди, поднимается уровень
+                            верховодки и буровой технике сложно проехать по земле, не превращая участок в грязь.
+                            <br> <br>
+                            Цена на бурение в сезон обычно поднимается, так как повышается спрос.
+                        </p>
                     </div>
                     <div class="question__accordion_content">
                         <p class="question__accordion_title">Какое оборудование в работе мы используем? <img
                                 class="question__accordion_img" src="src/img/accordion.svg" alt="Кнопка"></p>
-                        <p class="question__accordion_text accordion-hidden"></p>
+                        <p class="question__accordion_text accordion-hidden">Мы бурим скважины круглый год. <br>
+                            <br>
+                            Однако, лучшим временем для добычи воды считается зима (до -15℃). Во-первых это очень удобно
+                            при заезде буровой техники, во-вторых цена на бурение значительно ниже. <br>
+                            <br>
+
+                            Весной, летом и осенью бурят в сухой сезон. Когда идут обильные дожди, поднимается уровень
+                            верховодки и буровой технике сложно проехать по земле, не превращая участок в грязь.
+                            <br> <br>
+                            Цена на бурение в сезон обычно поднимается, так как повышается спрос.
+                        </p>
                     </div>
                 </div>
 
@@ -367,6 +400,13 @@
             <div class="footer__form">
                 <p class="footer__form_title">У вас остались вопросы?</p>
                 <p class="footer__form_text">Перезвоним вам в течении 10 минут</p>
+                <form class="footer__form_contact" id="" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input type="text" placeholder="Населенный пункт" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="+ 375 __ ___ __ __" />
+                    <button class="order__button button">Оставить заявку</button>
+                </form>
             </div>
         </div>
     </footer>

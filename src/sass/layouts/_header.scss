@@ -23,21 +23,21 @@
 }
 
 .header__navigation_link {
+    color: $color-light;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    @extend %transition;
 
-    a {
-        color: $color-light;
-        text-decoration: none;
-
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 2.4rem;
-
-        &:hover {
-            color: $color-aditional;
-        }
+    &:hover {
+        color: $color-aditional;
     }
+}
 
+.active_link {
+    color: $color-aditional;
 }
 
 .header__contact {
@@ -53,12 +53,18 @@
     a {
         color: $color-light;
         text-decoration: none;
+        @extend %transition;
 
         &:hover {
             color: $color-aditional;
+
         }
     }
 }
+
+
+
+
 
 .header__contact_form {
     margin-left: 2.8rem;
@@ -70,7 +76,7 @@
     justify-content: space-between;
 }
 
-.input_text {
+.header__input_text {
     flex-basis: 47%;
     background: $color-light;
     outline: none;

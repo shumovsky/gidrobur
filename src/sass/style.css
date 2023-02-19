@@ -1,3 +1,7 @@
+.question__accordion_text, .question__accordion_img, .header__contact a, .header__navigation_link, .button {
+  transition: all 0.3s ease-out;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -29,6 +33,10 @@ li {
 
 span {
   color: #FD9900;
+}
+
+::placeholder {
+  text-align: center;
 }
 
 .button {
@@ -401,7 +409,7 @@ template {
   padding: 0;
 }
 
-.header__navigation_link a {
+.header__navigation_link {
   color: #fff;
   text-decoration: none;
   font-style: normal;
@@ -409,7 +417,11 @@ template {
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
-.header__navigation_link a:hover {
+.header__navigation_link:hover {
+  color: #FD9900;
+}
+
+.active_link {
   color: #FD9900;
 }
 
@@ -440,7 +452,7 @@ template {
   justify-content: space-between;
 }
 
-.input_text {
+.header__input_text {
   flex-basis: 47%;
   background: #fff;
   outline: none;
@@ -465,6 +477,13 @@ main {
   background-image: url(./../img/car.png);
   background-repeat: no-repeat;
   background-position-x: right;
+  position: relative;
+}
+.primary::after {
+  content: url(./../img/100.png);
+  position: absolute;
+  left: 43%;
+  top: 50%;
 }
 
 .primary__wrapper {
@@ -544,6 +563,19 @@ main {
   grid-template-columns: repeat(2, 41.6rem);
   justify-content: space-around;
   padding-top: 45.8rem;
+  position: relative;
+}
+.about__content::before {
+  content: url(./../img/point-left.png);
+  position: absolute;
+  top: 37%;
+  left: 9%;
+}
+.about__content::after {
+  content: url(./../img/point-right.png);
+  position: absolute;
+  top: 25%;
+  right: 10%;
 }
 
 .about__content_rectange {
@@ -863,6 +895,7 @@ main {
   background: url(./../img/bg-question.png);
   padding-bottom: 17rem;
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .question__accordion {
@@ -895,6 +928,11 @@ main {
 .question__accordion_img {
   position: absolute;
   right: 5.7%;
+  cursor: pointer;
+}
+
+.question_select {
+  transform: rotate(180deg);
 }
 
 .question__accordion_text {
@@ -913,6 +951,7 @@ main {
 
 .footer {
   background: #60B6F8;
+  padding-bottom: 6rem;
 }
 
 .footer__wrapper {
@@ -989,12 +1028,21 @@ main {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 3.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .footer__form_text {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.9rem;
+  margin-top: 0;
+}
+
+.footer__form_contact {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-width: 32rem;
+  row-gap: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

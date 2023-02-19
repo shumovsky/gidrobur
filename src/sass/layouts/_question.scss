@@ -3,6 +3,7 @@
     background: url(./../img/bg-question.png);
     padding-bottom: 17rem;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .question__accordion {
@@ -36,6 +37,12 @@
 .question__accordion_img {
     position: absolute;
     right: 5.7%;
+    cursor: pointer;
+    @extend %transition;
+}
+
+.question_select {
+    transform: rotate(180deg);
 }
 
 .question__accordion_text {
@@ -46,6 +53,7 @@
     padding-bottom: 6rem;
     max-width: 92rem;
     padding-top: 1.5rem;
+    @extend %transition;
 }
 
 .accordion-hidden {

@@ -13,7 +13,21 @@
     grid-template-columns: repeat(2, 41.6rem);
     justify-content: space-around;
     padding-top: 45.8rem;
+    position: relative;
 
+    &::before {
+        content: url(./../img/point-left.png);
+        position: absolute;
+        top: 37%;
+        left: 9%;
+    }
+
+    &::after {
+        content: url(./../img/point-right.png);
+        position: absolute;
+        top: 25%;
+        right: 10%;
+    }
 }
 
 .about__content_rectange {

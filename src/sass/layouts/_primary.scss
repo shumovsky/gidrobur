@@ -11,6 +11,14 @@ main {
     background-image: url(./../img/car.png);
     background-repeat: no-repeat;
     background-position-x: right;
+    position: relative;
+
+    &::after {
+        content: url(./../img/100.png);
+        position: absolute;
+        left: 43%;
+        top: 50%;
+    }
 }
 
 .primary__wrapper {

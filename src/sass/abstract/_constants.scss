@@ -4,7 +4,9 @@ $color-text: #434040;
 $color-button: linear-gradient(180deg, #F1761D 0%, #FEBC62 100%);
 $bg-color: #60B6F8;
 
-
+%transition {
+    transition: all .3s ease-out;
+}
 
 
 $content-width: 1440px;
