@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a class="logo" href="/"><img class="logo__img" src="../src/img/logo.png" alt="Логотип"></a>
+            <nav class="header__navigation">
+                <ul class="header__navigation_list">
+                    <li class="header__navigation_item"><a class="header__navigation_link active_link"
+                            href="/">Главная</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link" href="#">Услуги</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link" href="#">О
+                            компании</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact"><a href="tel:+375447000415"><img src="../src/img/phone.svg" alt="phone"> +375
+                    (44) 7000 415</a>
+                <a href=""><img src="../src/img/viber.svg" alt="Viber"></a>
+                <a href=""><img src="../src/img/telegram.svg" alt="telegram"></a>
+            </div>
+            <div class="header__contact_form">
+                <form id="form" class="header_form" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input class="header__input_text" type="text" placeholder="Ваше имя" />
+                    <button class="order__button_header button">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Service -->
+    <section class="service">
+        <div class="service__wrapper wrapper">
+            <h3 class="service__title title">Бурим и обустраиваем</h3>
+            <div class="service__content">
+                <div class="service__navigaton">
+                    <ul class="service__navigaton_list">
+                        <li class="service__navigaton_item">Роторное бурение</li>
+                        <li class="service__navigaton_item">Малогабаритная установка</li>
+                        <li class="service__navigaton_item">Обустройство скважин</li>
+                        <li class="service__navigaton_item">Ремонт скважин</li>
+                        <li class="service__navigaton_item">Артезианская скважина</li>
+                    </ul>
+                </div>
+                <div class="service__description">
+                    <div class="service__description_content">
+                        <span class="service__description_span">Роторное
+                            бурение</span> скважин позволяет бурить скважины на артезианскую воду до 200 м. Вода из
+                        артезианской скважины защищена от внешнего загрязнения и лишена вредных примесей, так как
+                        проходит фильтрацию через десятки слоев грунта, а так же позволяет получить максимальное
+                        количество воды для обеспечения всех ваших потребностей. <br>
+                        <br>
+
+                        Среди бурильных методов водозаборных скважин роторный способ считается одним из популярных.
+
+                        <p class="service__description_title">Достоинства роторного бурения:</p>
+                        <ul class="service__description_list">
+                            <li class="service__description_item">Малые габариты, что обеспечивает доступ к любому
+                                участку
+                                и не повреждает ландшафт. Мы работаем на малогабаритной установке TizarPro УДВ-70</li>
+                            <li class="service__description_item">Универсальность. Роторный тип бурения можно применять
+                                при
+                                более широком спектре условий, чем ударную технологию, поскольку возможно использование
+                                многих насадок. За счет этого получится обрабатывать любые типы грунтовых слоев.</li>
+                            <li class="service__description_item">Быстрота. Благодаря особенностям бурения вращательным
+                                способом производительность труда намного выше. За 1-2 дня установка достигает глубины
+                                150
+                                метров с диаметром отверстия около 11 см.</li>
+                            <li class="service__description_item">Чистая и полезная вода в большом объеме круглый год.
+                                Грамотно обустроенная скважина не замерзает зимой, работает бесперебойно и для частного
+                                дома
+                                дает объем воды от 1 до 3 м³/ч.</li>
+                        </ul>
+                    </div>
+                    <div class="service__contact-us">
+                        <p class="service__contact-us_title">Закажите бурение прямо сейчас</p>
+                        <p class="service__contact-us_text">Лучшие цены, оптимальные сроки, гарантия надёжности и
+                            качества!</p>
+                        <form class="service__contact_form" id="form" action="/feedback/processing.php"
+                            enctype="multipart/form-data" novalidate>
+                            <input type="text" placeholder="Ваше имя" />
+                            <input type="text" placeholder="+375 _ _ _ _ _ _ _" />
+                            <button class="service__button button">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__wrapper service__footer wrapper">
+            <div class="footer__contact">
+                <p class="footer__contact_title">Наши контакты:</p>
+                <p class="footer__contact_link"><a href="tel:+375(44)7000415">+375 (44) 7000 415</a> <a href=""><img
+                            src="./src/img/viber.svg" alt="Viber"></a>
+                    <a href=""><img src="./src/img/telegram.svg" alt="telegram"></a>
+                </p>
+                <p class="footer__contact_adress">г.Минск, проезд Масюковщина 4, каб. 307</p>
+                <p class="footer__contact_unp">«ЕвроБурСервис»
+                    УНП 193324612 </p>
+            </div>
+            <div class="footer__working-mode">
+                <p class="footer__working_title">Режим работы:</p>
+                <!-- <p class="footer__working_img"></p> -->
+                <img src="src/img/working-time.png" alt="">
+                <p class="footer__working_time">Пн-Сб: 8:00 - 22:00</p>
+            </div>
+            <div class="footer__form">
+                <p class="footer__form_title">У вас остались вопросы?</p>
+                <p class="footer__form_text">Перезвоним вам в течении 10 минут</p>
+                <form class="footer__form_contact" id="" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input type="text" placeholder="Населенный пункт" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="+ 375 __ ___ __ __" />
+                    <button class="order__button button">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
