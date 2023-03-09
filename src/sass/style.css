@@ -1,4 +1,4 @@
-.service__navigaton_item, .question__accordion_text, .question__accordion_img, .header__contact a, .header__navigation_link, .button {
+.service__navigaton_item, .accordion-hidden, .question__accordion_text, .question__accordion_img, .header__contact a, .header__navigation_link, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -31,7 +31,7 @@ li {
   text-align: center;
 }
 
-span {
+.span_colored {
   color: #FD9900;
 }
 
@@ -471,19 +471,14 @@ main {
 }
 
 .primary {
-  background-size: contain;
+  background-size: auto;
   padding-top: 9rem;
   padding-bottom: 25rem;
-  background-image: url(./../img/car.png);
+  background-image: url(./../img/100.png), url(./../img/car.png);
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: center, right;
+  background-position-y: 70%, 32%;
   position: relative;
-}
-.primary::after {
-  content: url(./../img/100.png);
-  position: absolute;
-  left: 43%;
-  top: 50%;
 }
 
 .primary__wrapper {
@@ -558,23 +553,27 @@ main {
   padding-top: 0.4rem;
 }
 
+.about__title {
+  margin-bottom: 0;
+}
+
 .about__content {
   display: grid;
   grid-template-columns: repeat(2, 41.6rem);
   justify-content: space-around;
-  padding-top: 45.8rem;
+  padding-top: 49.2rem;
   position: relative;
 }
 .about__content::before {
   content: url(./../img/point-left.png);
   position: absolute;
-  top: 37%;
+  top: 40%;
   left: 9%;
 }
 .about__content::after {
   content: url(./../img/point-right.png);
   position: absolute;
-  top: 25%;
+  top: 28%;
   right: 10%;
 }
 
@@ -946,7 +945,10 @@ main {
 }
 
 .accordion-hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  height: 0;
 }
 
 .footer {
@@ -1047,7 +1049,7 @@ main {
 
 .service {
   background: url(./../img/service-bg.png);
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .service__wrapper {
@@ -1060,7 +1062,7 @@ main {
 
 .service__content {
   display: grid;
-  grid-template-columns: 24% 68%;
+  grid-template-columns: 24% 69%;
   padding-top: 3rem;
 }
 
@@ -1071,7 +1073,28 @@ main {
 }
 
 .service__description_content {
-  padding: 10rem 10rem 0.1rem 10rem;
+  padding: 10rem 10.5rem 0.1rem 10.5rem;
+}
+
+[data-service=rotor] {
+  background-image: url(./../img/plant.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: none;
+}
+
+[data-service=arrangement] {
+  background-image: url(./../img/plant.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  display: none;
+}
+
+[data-service=repair] {
+  background-image: url(./../img/gidrofor.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .service__navigaton_list {
@@ -1102,10 +1125,6 @@ main {
   font-size: 2rem;
   line-height: 2.4rem;
   color: #434040;
-  background: url(./../img/plant.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
 }
 
 .service__description_span {
@@ -1131,6 +1150,128 @@ main {
   content: url(./../img/done.png);
   position: absolute;
   left: 0;
+}
+
+.service__well_rectangle {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+  border-radius: 10px;
+  margin-bottom: 1.6rem;
+}
+.service__well_rectangle:last-child {
+  margin-bottom: 0;
+}
+.service__well_rectangle img {
+  justify-self: center;
+  padding-top: 2rem;
+}
+
+.well_rectangle_text {
+  padding-bottom: 1.4rem;
+}
+.well_rectangle_text:nth-last-child(n+2) {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.well_rectangle_list {
+  margin-top: 0;
+  padding-bottom: 2.4rem;
+}
+
+.well_rectangle_list_item {
+  list-style-type: disc;
+}
+
+.arrangement_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: #434040;
+  padding-top: 3rem;
+}
+
+.arrangement_form {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.well_rectangle_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.service__well_rectangle {
+  display: grid;
+  grid-template-columns: 27% 68%;
+}
+
+.repair_header {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #434040;
+  display: grid;
+  grid-template-columns: 8% 1fr;
+  align-items: center;
+}
+.repair_header:nth-child(1) {
+  margin-top: 0;
+}
+.repair_header::before {
+  content: url(./../img/done.png);
+  line-height: 0;
+}
+
+.repair_description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.repair_description_content {
+  display: grid;
+  grid-template-columns: 25% 65%;
+}
+
+.repair__description_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-top: 0;
+}
+
+.repair_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  padding-top: 2.8rem;
+}
+
+.repair_answer {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  display: grid;
+  grid-template-columns: 8% 1fr;
+  align-items: center;
+}
+.repair_answer:last-child {
+  padding-bottom: 3rem;
+}
+.repair_answer::before {
+  content: url(./../img/done.png);
+  line-height: 0;
+}
+
+.repair_answer_description {
+  display: grid;
+  grid-template-columns: 8% 1fr;
+}
+.repair_answer_description::before {
+  content: "";
 }
 
 .service__contact-us {
@@ -1166,6 +1307,189 @@ main {
 
 .service__footer {
   margin-top: 24rem;
+}
+
+.about_page {
+  background: url(./../img/bg-pages.png);
+  background-position: top;
+  color: #434040;
+  padding-bottom: 24rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_page__title {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 3.2rem;
+  color: #434040;
+  text-align: center;
+  padding-top: 6.3rem;
+  margin-top: 0;
+}
+
+.about_page__content {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 7.5rem 10rem 20rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+  border-radius: 10px;
+  margin-top: 6.5rem;
+}
+
+.about_page_well {
+  padding-bottom: 4rem;
+}
+
+.about_page_description {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  padding-bottom: 5.5rem;
+}
+
+.about_main {
+  font-weight: 600;
+}
+
+.about_page_list_item {
+  list-style-type: disc;
+}
+
+.trust__description {
+  display: grid;
+  grid-template-columns: 18% 75%;
+}
+
+.trust__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5.5rem;
+}
+
+.trust_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+.trust__description_title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-top: 0;
+}
+
+.trust__description_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact_page_title {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.contact_page__content {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+  border-radius: 10px;
+  padding: 7.5rem 10rem 20rem;
+}
+
+.contact_page_main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact_page__logo {
+  text-align: center;
+  position: relative;
+}
+.contact_page__logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  background: #434040;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.contact_page_company {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 2.4rem;
+}
+
+.contact_title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-top: 0;
+}
+
+.contact_page__contact {
+  padding-left: 4rem;
+}
+
+.contact_page_content {
+  display: grid;
+  grid-template-columns: 5% 47% 7% 7%;
+  align-items: center;
+}
+
+.contact_page_link {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #434040;
+  text-decoration: none;
+}
+
+.contact_page_email img {
+  padding-right: 1rem;
+}
+
+.contact_page__adress_text {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  margin-top: 0;
+}
+
+.contact_page__adress_content {
+  display: grid;
+  grid-template-columns: 4% 65%;
+  align-items: baseline;
+}
+
+.contact_page__form {
+  max-width: 43rem;
+  background: linear-gradient(180deg, #D9F0FA 0%, rgba(217, 240, 250, 0.48) 100%);
+  box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+  border-radius: 10px;
+  margin-left: auto;
+  text-align: center;
+  padding: 2rem 5.5rem 3.2rem;
+  margin-top: 3.4rem;
+}
+.contact_page__form form {
+  margin: 0 auto;
+}
+
+.contact__form_title {
+  color: #434040;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

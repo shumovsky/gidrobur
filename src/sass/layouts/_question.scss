@@ -57,5 +57,9 @@
 }
 
 .accordion-hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    height: 0;
+    @extend %transition;
 }

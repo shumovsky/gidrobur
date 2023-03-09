@@ -1,6 +1,6 @@
 .service {
     background: url(./../img/service-bg.png);
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .service__wrapper {
@@ -13,7 +13,7 @@
 
 .service__content {
     display: grid;
-    grid-template-columns: 24% 68%;
+    grid-template-columns: 24% 69%;
     padding-top: 3rem;
 }
 
@@ -24,8 +24,29 @@
 }
 
 .service__description_content {
-    padding: 10rem 10rem .1rem 10rem;
+    padding: 10rem 10.5rem .1rem 10.5rem;
 
+}
+
+[data-service="rotor"] {
+    background-image: url(./../img/plant.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: none;
+}
+
+[data-service="arrangement"] {
+    background-image: url(./../img/plant.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    display: none;
+}
+
+[data-service="repair"] {
+    background-image: url(./../img/gidrofor.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .service__navigaton_list {
@@ -58,10 +79,7 @@
     font-size: 2rem;
     line-height: 2.4rem;
     color: $color-text;
-    background: url(./../img/plant.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
+
 }
 
 .service__description_span {
@@ -87,6 +105,139 @@
         content: url(./../img/done.png);
         position: absolute;
         left: 0;
+    }
+}
+
+.service__well_rectangle {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+    border-radius: 10px;
+    margin-bottom: 1.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        justify-self: center;
+        padding-top: 2rem;
+    }
+}
+
+.well_rectangle_text {
+    padding-bottom: 1.4rem;
+
+    &:nth-last-child(n+2) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.well_rectangle_list {
+    margin-top: 0;
+    padding-bottom: 2.4rem;
+}
+
+.well_rectangle_list_item {
+    list-style-type: disc;
+}
+
+.arrangement_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: $color-text;
+    padding-top: 3rem;
+}
+
+.arrangement_form {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.well_rectangle_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.service__well_rectangle {
+    display: grid;
+    grid-template-columns: 27% 68%;
+}
+
+.repair_header {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $color-text;
+    display: grid;
+    grid-template-columns: 8% 1fr;
+    align-items: center;
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+
+    &::before {
+        content: url(./../img/done.png);
+        line-height: 0;
+    }
+
+
+}
+
+.repair_description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.repair_description_content {
+    display: grid;
+    grid-template-columns: 25% 65%;
+}
+
+.repair__description_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-top: 0;
+}
+
+.repair_title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    padding-top: 2.8rem;
+}
+
+
+.repair_answer {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    display: grid;
+    grid-template-columns: 8% 1fr;
+    align-items: center;
+
+    &:last-child {
+        padding-bottom: 3rem;
+    }
+
+    &::before {
+        content: url(./../img/done.png);
+        line-height: 0;
+    }
+}
+
+.repair_answer_description {
+    display: grid;
+    grid-template-columns: 8% 1fr;
+
+    &::before {
+        content: '';
     }
 }
 

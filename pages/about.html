@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a class="logo" href="/"><img class="logo__img" src="../src/img/logo.png" alt="Логотип"></a>
+            <nav class="header__navigation">
+                <ul class="header__navigation_list">
+                    <li class="header__navigation_item"><a class="header__navigation_link " href="/">Главная</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link"
+                            href="service.html">Услуги</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link active_link"
+                            href="about.html">О компании</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link"
+                            href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact"><a href="tel:+375447000415"><img src="../src/img/phone.svg" alt="phone"> +375
+                    (44) 7000 415</a>
+                <a href=""><img src="../src/img/viber.svg" alt="Viber"></a>
+                <a href=""><img src="../src/img/telegram.svg" alt="telegram"></a>
+            </div>
+            <div class="header__contact_form">
+                <form id="form" class="header_form" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input class="header__input_text" type="text" placeholder="Ваше имя" />
+                    <button class="order__button_header button">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- About -->
+    <section class="about_page">
+        <div class="about_page__wrapper wrapper">
+            <h3 class="about_page__title">О компании</h3>
+            <div class="about_page__content">
+                <div class="about_page_description">
+                    <div class="about_page_well"><span class="about_main">Бурим скважины с 2013 года:</span> знаем все
+                        нюансы белорусских
+                        ландшафтов,
+                        проводим точные размеры, выбираем грамотное место будущей скважины, бурим и обустраиваем. </div>
+                    <div class="about_page_service">
+                        <span class="about_main">Оказываем полный спектр услуг:</span> <br>
+                        от выбора места до сдачи паспорта на объект.
+                        <ul class="about_page_list">
+                            <li class="about_page_list_item">Работаем с юридическими и физическими лицами.</li>
+                            <li class="about_page_list_item">Офис и парк техники находятся в Минске, но мы выезжаем в
+                                любой населенный пункт Беларуси.</li>
+                            <li class="about_page_list_item">Консультируем в выборе оборудования.</li>
+                            <li class="about_page_list_item">100% выполнение работы в оговоренные сроки.</li>
+                            <li class="about_page_list_item">Даем гарантию на работу.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about_page_trust">
+                    <p class="trust_title">Нам доверяют</p>
+                    <div class="trust__content">
+                        <div class="trust__description"><img src="../src/img/pay-ico.png" alt="Иконка">
+                            <div class="trust__description_content">
+                                <p class="trust__description_title">Работаем без предоплаты</p>
+                                <p class="trust__description_text">Не оплачивайте ожидания,
+                                    платите только за результат. Оплата производится после того как найдем воду</p>
+                            </div>
+                        </div>
+                        <div class="trust__description"><img src="../src/img/hand-ico.png" alt="Иконка">
+                            <div class="trust__description_content">
+                                <p class="trust__description_title">Всегда на связи с клиентом</p>
+                                <p class="trust__description_text">Быстро реагируем и оперативно решаем вопросы наших
+                                    клиентов</p>
+                            </div>
+                        </div>
+                        <div class="trust__description"><img src="../src/img/class-ico.png" alt="Иконка">
+                            <div class="trust__description_content">
+                                <p class="trust__description_title">Большой опыт в бурении</p>
+                                <p class="trust__description_text">Мы пробурили более 2000 скважин. Нас рекомендуют
+                                    своим
+                                    друзьям
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__contact">
+                <p class="footer__contact_title">Наши контакты:</p>
+                <p class="footer__contact_link"><a href="tel:+375(44)7000415">+375 (44) 7000 415</a> <a href=""><img
+                            src="../src/img/viber.svg" alt="Viber"></a>
+                    <a href=""><img src="../src/img/telegram.svg" alt="telegram"></a>
+                </p>
+                <p class="footer__contact_adress">г.Минск, проезд Масюковщина 4, каб. 307</p>
+                <p class="footer__contact_unp">«ЕвроБурСервис»
+                    УНП 193324612 </p>
+            </div>
+            <div class="footer__working-mode">
+                <p class="footer__working_title">Режим работы:</p>
+                <img src="../src/img/working-time.png" alt="">
+                <p class="footer__working_time">Пн-Сб: 8:00 - 22:00</p>
+            </div>
+            <div class="footer__form">
+                <p class="footer__form_title">У вас остались вопросы?</p>
+                <p class="footer__form_text">Перезвоним вам в течении 10 минут</p>
+                <form class="footer__form_contact" id="" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input type="text" placeholder="Населенный пункт" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="+ 375 __ ___ __ __" />
+                    <button class="order__button button">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

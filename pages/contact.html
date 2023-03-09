@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a class="logo" href="/"><img class="logo__img" src="../src/img/logo.png" alt="Логотип"></a>
+            <nav class="header__navigation">
+                <ul class="header__navigation_list">
+                    <li class="header__navigation_item"><a class="header__navigation_link " href="/">Главная</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link"
+                            href="service.html">Услуги</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link " href="about.html">О
+                            компании</a></li>
+                    <li class="header__navigation_item"><a class="header__navigation_link"
+                            href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact"><a href="tel:+375447000415"><img src="../src/img/phone.svg" alt="phone"> +375
+                    (44) 7000 415</a>
+                <a href=""><img src="../src/img/viber.svg" alt="Viber"></a>
+                <a href=""><img src="../src/img/telegram.svg" alt="telegram"></a>
+            </div>
+            <div class="header__contact_form">
+                <form id="form" class="header_form" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input class="header__input_text" type="text" placeholder="Ваше имя" />
+                    <button class="order__button_header button">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- About -->
+    <section class="contact_page">
+        <div class="contact_page__wrapper wrapper">
+            <h3 class="contact_page_title">Контакты</h3>
+            <div class="contact_page__content">
+                <div class="contact_page_main">
+                    <div class="contact_page__logo"><img src="../src/img/logo.svg" alt="Логотип">
+                        <p class="contact_page_company">«ЕвроБурСервис»</p>
+                    </div>
+                    <div class="contact_page__contact">
+                        <p class="contact_title">Наши контакты:</p>
+                        <div class="contact_page_content"><img src="../src/img/phone-ico.svg" alt="Иконка"><a
+                                class="contact_page_link" href="tel:+375(44)7000415">+375 (44) 7000 415</a>
+                            <a href=""><img src="../src/img/viber.svg" alt="Viber"></a>
+                            <a href=""><img src="../src/img/telegram.svg" alt="telegram"></a>
+                        </div>
+                        <p class="contact_page_email"><img src="../src/img/mail-ico.svg" alt=""><a
+                                class="contact_page_link" href="mailto:example@mail.com">example@mail.com</a></p>
+                        <div class="contact_page__working-mode">
+                            <p class="contact_title">Режим работы:</p>
+                            <img src="../src/img/working-time.png" alt="">
+                            <p class="footer__working_time">Пн-Сб: 8:00 - 22:00</p>
+                        </div>
+                        <div class="contact_page__adress">
+                            <p class="contact_title">Юридический адрес:</p>
+                            <div class="contact_page__adress_content"><img src="../src/img/location-ico.svg"
+                                    alt="Иконка">
+                                <p class="contact_page__adress_text">г.Минск,
+                                    проезд Масюковщина 4, каб. 307</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_page__form">
+                    <p class="contact__form_title">У вас остались вопросы?</p>
+                    <p class="footer__form_text">Перезвоним вам в течении 10 минут</p>
+                    <form class="footer__form_contact" id="" action="/feedback/processing.php"
+                        enctype="multipart/form-data" novalidate>
+                        <input type="text" placeholder="Населенный пункт" />
+                        <input type="text" placeholder="Ваше имя" />
+                        <input type="text" placeholder="+ 375 __ ___ __ __" />
+                        <button class="order__button button">Оставить заявку</button>
+                    </form>
+                </div>
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a><a
+                        href="https://yandex.by/maps/157/minsk/house/Zk4YcgJhTUEBQFtpfXVzdHthZA==/?ll=27.451782%2C53.924905&utm_medium=mapframe&utm_source=maps&z=15.6"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Проезд Масюковщина, 4 на карте
+                        Минска — Яндекс Карты</a><iframe
+                        src="https://yandex.by/map-widget/v1/?ll=27.451782%2C53.924905&mode=whatshere&whatshere%5Bpoint%5D=27.451446%2C53.925720&whatshere%5Bzoom%5D=17&z=15.6"
+                        width="100%" height="400" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__contact">
+                <p class="footer__contact_title">Наши контакты:</p>
+                <p class="footer__contact_link"><a href="tel:+375(44)7000415">+375 (44) 7000 415</a> <a href=""><img
+                            src="../src/img/viber.svg" alt="Viber"></a>
+                    <a href=""><img src="../src/img/telegram.svg" alt="telegram"></a>
+                </p>
+                <p class="footer__contact_adress">г.Минск, проезд Масюковщина 4, каб. 307</p>
+                <p class="footer__contact_unp">«ЕвроБурСервис»
+                    УНП 193324612 </p>
+            </div>
+            <div class="footer__working-mode">
+                <p class="footer__working_title">Режим работы:</p>
+                <img src="../src/img/working-time.png" alt="">
+                <p class="footer__working_time">Пн-Сб: 8:00 - 22:00</p>
+            </div>
+            <div class="footer__form">
+                <p class="footer__form_title">У вас остались вопросы?</p>
+                <p class="footer__form_text">Перезвоним вам в течении 10 минут</p>
+                <form class="footer__form_contact" id="" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <input type="text" placeholder="Населенный пункт" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="+ 375 __ ___ __ __" />
+                    <button class="order__button button">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
