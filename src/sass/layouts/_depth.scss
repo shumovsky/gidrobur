@@ -3,11 +3,23 @@
     background: url(./../img/bg-depth.png);
     background-position: bottom;
     background-repeat: no-repeat;
+
+    @include media-mobile {
+        padding-top: 0;
+        background-size: 250%;
+        background-position-x: 20%;
+    }
 }
 
 .depth__title {
     max-width: 60rem;
     margin: 0 auto;
+
+    @include media-mobile {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 4rem;
+    }
 }
 
 .depth__text {
@@ -15,6 +27,12 @@
     font-size: 2rem;
     line-height: 2.4rem;
     text-align: center;
+
+    @include media-mobile {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
 }
 
 .depth__form {
@@ -24,4 +42,10 @@
     padding-top: 4.8rem;
     grid-column-gap: 2rem;
     padding-bottom: 14.8rem;
+
+    @include media-mobile {
+        grid-template-rows: repeat(4, 5.2rem);
+        grid-template-columns: 30rem;
+        grid-row-gap: 1.2rem;
+    }
 }

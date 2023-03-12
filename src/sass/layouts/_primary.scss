@@ -5,30 +5,34 @@ main {
 }
 
 .primary {
-    background-size: auto;
+    background-size: contain;
     padding-top: 9rem;
     padding-bottom: 25rem;
-    background-image: url(./../img/100.png), url(./../img/car.png);
+    background-image: url(./../img/car2.png);
     background-repeat: no-repeat;
-    background-position-x: center, right;
-    background-position-y: 70%, 32%;
-    // background-size: ;
+    background-position-x: right;
+    background-position-y: 32%;
+    background-size: 60%;
     position: relative;
 
-    // &::after {
-    //     content: '';
-    //     background: url(./../img/100.png) no-repeat;
-    //     position: absolute;
-    //     left: 41%;
-    //     top: 50%;
-    //     width: 100%;
-    //     height: 100%;
-    // }
+    @include media-mobile {
+        padding-bottom: 5rem;
+    }
+
+    @include media-mobile {
+        background: url(./../img/car.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .primary__wrapper {
-    padding-left: 7rem;
 
+    @include media-mobile {
+        padding-left: 1.6rem;
+        padding-top: 8rem;
+        text-align: center;
+    }
 }
 
 
@@ -38,6 +42,13 @@ main {
     line-height: 6.4rem;
     color: $color-text;
     margin-bottom: 0;
+
+    @include media-mobile {
+        font-weight: 700;
+        font-size: 3.4rem;
+        line-height: 6.4rem;
+        margin-bottom: 1.7rem;
+    }
 }
 
 .primary__promo {
@@ -47,6 +58,15 @@ main {
     line-height: 4rem;
     margin-top: 1.9rem;
     margin-bottom: 0;
+
+    @include media-mobile {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        max-width: 26.5rem;
+        margin: 0 auto;
+    }
 }
 
 .primaty__text {
@@ -58,4 +78,22 @@ main {
 
 .primary__button {
     padding: 1.1rem 4.7rem;
+
+    @include media-mobile {
+        padding: 1.6rem 8.4rem;
+        margin-top: 1.2rem;
+    }
+}
+
+.primary__phone {
+    max-width: 29.8rem;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: none;
+    margin: 0 auto;
+
+    @include media-mobile {
+        display: block;
+
+    }
 }

@@ -1,7 +1,11 @@
 .about {
     background: url(./../img/bg-about.png), url(./../img/work.png) center no-repeat;
-    background-size: 100%, cover;
-    background-position-y: 0, -24%;
+    background-size: contain, auto;
+    background-position-y: 0, -12%;
+
+    @include media-mobile {
+        background: url(./../img/about-bg-small.png) no-repeat;
+    }
 }
 
 .about__wrapper {
@@ -10,6 +14,8 @@
 
 .about__title {
     margin-bottom: 0;
+
+
 }
 
 .about__content {
@@ -18,21 +24,38 @@
     justify-content: space-around;
     padding-top: 49.2rem;
     position: relative;
-    // background: ;
+
+    @include media-mobile {
+        grid-template-columns: 1fr;
+        padding-top: 32.8rem;
+        grid-row-gap: 5.8rem;
+    }
 
 
     &::before {
         content: url(./../img/point-left.png);
         position: absolute;
         top: 40%;
-        left: 9%;
+        left: 15%;
+
+        @include media-mobile {
+            content: url(./../img/point-left-small.png);
+            top: 17.5%;
+            left: -2%;
+        }
     }
 
     &::after {
         content: url(./../img/point-right.png);
         position: absolute;
         top: 28%;
-        right: 10%;
+        right: 16%;
+
+        @include media-mobile {
+            content: url(./../img/point-right-small.png);
+            top: 15%;
+            right: 11%;
+        }
     }
 }
 
@@ -41,6 +64,15 @@
     box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
     border-radius: 10px;
     padding: 1.6rem 1.4rem;
+
+    @include media-mobile {
+        max-width: 80%;
+        padding: .8rem 1rem;
+
+        &:last-child {
+            justify-self: right;
+        }
+    }
 
     >div {
         background: rgba(255, 255, 255, 0.5);
@@ -56,6 +88,13 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
     margin-bottom: 0;
+
+    @include media-mobile {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        margin: 1rem 0;
+    }
 }
 
 .about__content_text {
@@ -63,4 +102,11 @@
     font-size: 2rem;
     line-height: 2.4rem;
     margin-top: 1.4rem;
+
+    @include media-mobile {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-top: 0;
+    }
 }

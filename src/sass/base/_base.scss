@@ -17,6 +17,10 @@ li {
     padding: 0 6rem;
     color: $color-text;
     font-style: normal;
+
+    @include media-mobile {
+        padding: 0 1.6rem;
+    }
 }
 
 .title {
@@ -25,10 +29,18 @@ li {
     font-size: 3.6rem;
     line-height: 4rem;
     text-align: center;
+
+    @include media-mobile {
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        text-align: center;
+    }
 }
 
 .span_colored {
     color: $color-aditional;
+    font-weight: 600;
 }
 
 ::placeholder {

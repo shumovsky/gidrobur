@@ -1,6 +1,7 @@
 // Constants
 
 @import 'abstract/constants';
+@import 'abstract/mixins';
 
 // Base
 @import 'base/base';
@@ -21,3 +22,4 @@
 @import 'layouts/service';
 @import 'layouts/about-page';
 @import 'layouts/contact-page';
+@import 'layouts/modal';

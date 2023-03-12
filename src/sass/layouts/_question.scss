@@ -23,6 +23,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include media-mobile {
+        padding-left: 1.4rem;
+    }
 }
 
 .question__accordion_title {
@@ -32,6 +36,13 @@
     padding-bottom: 2.2rem;
     margin-bottom: 0;
     position: relative;
+
+    @include media-mobile {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 25rem;
+    }
 }
 
 .question__accordion_img {
@@ -39,6 +50,10 @@
     right: 5.7%;
     cursor: pointer;
     @extend %transition;
+
+    @include media-mobile {
+        right: -35.3%;
+    }
 }
 
 .question_select {
@@ -54,6 +69,11 @@
     max-width: 92rem;
     padding-top: 1.5rem;
     @extend %transition;
+
+    @include media-mobile {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
 }
 
 .accordion-hidden {

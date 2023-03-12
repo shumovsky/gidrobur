@@ -18,6 +18,11 @@
     <header class="header">
         <div class="header__wrapper wrapper">
             <a class="logo" href="index.html"><img class="logo__img" src="src/img/logo.png" alt="Логотип"></a>
+            <div class="hamburger">
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+            </div>
             <nav class="header__navigation">
                 <ul class="header__navigation_list">
                     <li class="header__navigation_item"><a class="header__navigation_link active_link"
@@ -54,6 +59,7 @@
                     Бурим с первого подхода.<br> Готовая скважина у вас на участке за 1 день!
                 </p>
                 <p class="primaty__text">Быстро рассчитаем стоимость</p>
+                <input type="text" class="primary__phone" placeholder="Ваш телефон">
                 <button class="primary__button button">Оставить заявку</button>
             </div>
 
@@ -203,6 +209,12 @@
                                 <li class="price__description_item">Работа бригады</li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="price__content_mobile">
+                        <p class="price__content_mobile_text"> <img src="./src/img/wallet.svg" alt="Кошелёк"> Работаем
+                            без предоплаты</p>
+                        <p class="price__content_mobile_text"><img src="./src/img/money.svg" alt="Деньги"> Без скрытых
+                            платежей</p>
                     </div>
                 </div>
             </div>
@@ -413,6 +425,22 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form class="modal__form_contact" id="" action="/feedback/processing.php" enctype="multipart/form-data"
+                    novalidate>
+                    <div class="modal__close" data-close="">×</div>
+                    <input type="text" placeholder="Населенный пункт" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="text" placeholder="+ 375 __ ___ __ __" />
+                    <button class="order__button button">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

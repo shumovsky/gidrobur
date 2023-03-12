@@ -1,6 +1,17 @@
+.advantage {
+    @include media-mobile {
+        padding-bottom: 5rem;
+    }
+}
+
 .advantage__wrapper {
     display: flex;
     justify-content: space-around;
+
+    @include media-mobile {
+        display: block;
+        padding: 0 4rem;
+    }
 }
 
 .advantage__unit {
