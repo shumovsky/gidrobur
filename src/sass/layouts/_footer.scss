@@ -9,6 +9,10 @@
     justify-content: space-between;
     padding-top: 2rem;
     align-items: baseline;
+
+    @include media-mobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .footer__contact {
@@ -74,6 +78,7 @@
 
 .footer__form {
     color: $color-light;
+    grid-row: 1/2;
 }
 
 .footer__form_title {

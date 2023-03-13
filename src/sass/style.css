@@ -1356,6 +1356,11 @@ main {
   padding-top: 2rem;
   align-items: baseline;
 }
+@media (max-width: 414px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .footer__contact {
   color: #fff;
@@ -1417,6 +1422,7 @@ main {
 
 .footer__form {
   color: #fff;
+  grid-row: 1/2;
 }
 
 .footer__form_title {
