@@ -457,7 +457,7 @@ template {
     width: 100%;
     left: 0;
     text-align: center;
-    transform: translateY(-500px);
+    transform: translateY(-999px);
     transition: 0.7s;
   }
 }

@@ -55,12 +55,13 @@
         width: 100%;
         left: 0;
         text-align: center;
-        transform: translateY(-500px);
+        transform: translateY(-999px);
         transition: .7s;
     }
 }
 
 .navigation__active {
+
     background: #60B6F8;
     z-index: 15;
     width: 100%;
