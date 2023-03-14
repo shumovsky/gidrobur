@@ -10,17 +10,17 @@ const selectClickedLink = (selectLink, param) => {
 };
 
 // Navigation
-const navigation = () => {
-  const navList = document.querySelector('.header__navigation_list');
-  navList.addEventListener('click', (e) => {
-    if (e.target.classList.contains('header__navigation_link')) {
-      let selectLink = e.target;
-      removeSelectLink(`header__navigation_link`, `active_link`);
-      selectClickedLink(selectLink, `active_link`);
-    }
-  });
-};
-navigation();
+// const navigation = () => {
+//   const navList = document.querySelector('.header__navigation_list');
+//   navList.addEventListener('click', (e) => {
+//     if (e.target.classList.contains('header__navigation_link')) {
+//       let selectLink = e.target;
+//       removeSelectLink(`header__navigation_link`, `active_link`);
+//       selectClickedLink(selectLink, `active_link`);
+//     }
+//   });
+// };
+// navigation();
 
 // Accordion
 const accordion = () => {
@@ -48,3 +48,26 @@ const accordion = () => {
   });
 };
 accordion();
+
+// Slider
+
+new Swiper('.review__slider');
+
+// Hamburger
+const humburger = () => {
+  const hamburger = document.querySelector('.hamburger');
+  const closeNav = document.querySelector('.navigation__close');
+  const navigation = document.querySelector('.navigation');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.add('_not-active');
+    navigation.classList.add('navigation__active');
+  });
+
+  closeNav.addEventListener('click', () => {
+    hamburger.classList.remove('_not-active');
+    navigation.classList.remove('navigation__active');
+  });
+};
+
+humburger();

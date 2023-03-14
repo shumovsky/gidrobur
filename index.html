@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="src/js/main.js" defer></script>
     <title>Бурение скважин</title>
 </head>
@@ -23,7 +25,11 @@
                 <span class="hamburger_line"></span>
                 <span class="hamburger_line"></span>
             </div>
-            <nav class="header__navigation">
+            <nav class="navigation">
+                <div class="navigation__header">
+                    <img class="navigation_logo" src="./src/img/logo.svg" alt="Логотип">
+                    <img class="navigation__close" src="./src/img/nav-close.svg" alt="Закрыть">
+                </div>
                 <ul class="header__navigation_list">
                     <li class="header__navigation_item"><a class="header__navigation_link active_link"
                             href="./index.html">Главная</a></li>
@@ -34,6 +40,21 @@
                     <li class="header__navigation_item"><a class="header__navigation_link"
                             href="pages/contact.html">Контакты</a></li>
                 </ul>
+                <div class="navigation__contact"><a href="tel:+375447000415"><img src="./src/img/phone.svg" alt="phone">
+                        +375
+                        (44) 7000 415</a>
+                    <a href=""><img src="./src/img/viber.svg" alt="Viber"></a>
+                    <a href=""><img src="./src/img/telegram.svg" alt="telegram"></a>
+                </div>
+                <div class="navigation__form">
+                    <p class="navigation__form_title">У вас есть вопросы?</p>
+                    <p class="navigation__form_text">Перезвоним вам в течении 10 минут</p>
+                    <form class="navigation__form_contact" id="" action="/feedback/processing.php"
+                        enctype="multipart/form-data" novalidate>
+                        <input type="text" placeholder="+ 375 __ ___ __ __" />
+                        <button class="order__button button">Оставить заявку</button>
+                    </form>
+                </div>
             </nav>
             <div class="header__contact"><a href="tel:+375447000415"><img src="./src/img/phone.svg" alt="phone"> +375
                     (44) 7000 415</a>
@@ -54,14 +75,20 @@
         <!-- Primary -->
         <section class="primary">
             <div class="primary__wrapper wrapper">
-                <h1 class="primary__title">Бурение скважин</h1>
-                <p class="primary__promo">
-                    Бурим с первого подхода.<br> Готовая скважина у вас на участке за 1 день!
-                </p>
-                <p class="primaty__text">Быстро рассчитаем стоимость</p>
-                <input type="text" class="primary__phone" placeholder="Ваш телефон">
-                <button class="primary__button button">Оставить заявку</button>
+                <div class="primary__contet">
+                    <h1 class="primary__title">Бурение скважин</h1>
+                    <p class="primary__promo">
+                        Бурим с первого подхода.<br> Готовая скважина у вас на участке за 1 день!
+                    </p>
+                    <p class="primaty__text">Быстро рассчитаем стоимость</p>
+                    <input type="text" class="primary__phone" placeholder="Ваш телефон">
+                    <button class="primary__button button">Оставить заявку</button>
+                </div>
+                <div class="primary__widget">
+                    <!-- <img src="./src/img/car.png" alt="Буровая установка"> -->
+                </div>
             </div>
+
 
         </section>
         <!-- Advantage -->
@@ -283,41 +310,94 @@
             <div class="review__wrapper wrapper">
                 <h3 class="review__title title"><span class="span_colored">Отзывы</span> о нашей работе</h3>
                 <div class="review__video_slider"><img src="src/img/slider.png" alt="Видео"></div>
-                <div class="review__text_slider">
-                    <div class="review__text_slider-content">
-                        <div class="review__text_slider-rectange">
-                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
-                                Замерщик ( к
-                                сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и подсказывал
-                                все нюансы с которыми мы могли столкнуться. Остались довольны произведенной работой.</p>
-                            <p class="review__slider_name">Валерка.</p>
-                            <p class="review__slider_city">Деревня Каменная горка</p>
-                        </div>
-                        <div class="review__text_slider-rectange">
-                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
-                                Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
-                                подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
-                                работой.</p>
-                            <p class="review__slider_name">Валерка.</p>
-                            <p class="review__slider_city">Деревня Каменная горка</p>
-                        </div>
-                        <div class="review__text_slider-rectange">
-                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
-                                Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
-                                подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
-                                работой.</p>
-                            <p class="review__slider_name">Валерка.</p>
-                            <p class="review__slider_city">Деревня Каменная горка</p>
-                        </div>
-                        <div class="review__text_slider-rectange">
-                            <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
-                                Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
-                                подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
-                                работой.</p>
-                            <p class="review__slider_name">Валерка.</p>
-                            <p class="review__slider_city">Деревня Каменная горка</p>
-                        </div>
+                <div class="review__text_slider-content">
+                    <div class="review__text_slider-rectange">
+                        <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                            Замерщик ( к
+                            сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и подсказывал
+                            все нюансы с которыми мы могли столкнуться. Остались довольны произведенной работой.</p>
+                        <p class="review__slider_name">Валерка.</p>
+                        <p class="review__slider_city">Деревня Каменная горка</p>
                     </div>
+                    <div class="review__text_slider-rectange">
+                        <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                            Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
+                            подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
+                            работой.</p>
+                        <p class="review__slider_name">Дмитрий.</p>
+                        <p class="review__slider_city">Деревня Каменная горка</p>
+                    </div>
+                    <div class="review__text_slider-rectange">
+                        <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                            Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
+                            подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
+                            работой.</p>
+                        <p class="review__slider_name">Костя.</p>
+                        <p class="review__slider_city">Деревня Каменная горка</p>
+                    </div>
+                    <div class="review__text_slider-rectange">
+                        <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и качественно.
+                            Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё ремонта) и
+                            подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны произведенной
+                            работой.</p>
+                        <p class="review__slider_name">Валерка.</p>
+                        <p class="review__slider_city">Деревня Каменная горка</p>
+                    </div>
+                </div>
+                <div class="swiper review__slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review__slider-container">
+                                <div class="review_slider__content">
+                                    <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и
+                                        качественно.
+                                        Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё
+                                        ремонта) и
+                                        подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны
+                                        произведенной
+                                        работой.</p>
+                                    <p class="review__slider_name">Валерка.</p>
+                                    <p class="review__slider_city">Деревня Каменная горка</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review__slider-container">
+                                <div class="review_slider__content">
+                                    <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и
+                                        качественно.
+                                        Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё
+                                        ремонта) и
+                                        подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны
+                                        произведенной
+                                        работой.</p>
+                                    <p class="review__slider_name">Валерка.</p>
+                                    <p class="review__slider_city">Деревня Каменная горка</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review__slider-container">
+                                <div class="review_slider__content">
+                                    <p class="review__slider_text">Спасибо компании. Монтаж произвели аккуратно и
+                                        качественно.
+                                        Замерщик ( к сожелению не знаем имя) четко произвел замер ( у нас не было ещё
+                                        ремонта) и
+                                        подсказывал все нюансы с которыми мы могли столкнуться. Остались довольны
+                                        произведенной
+                                        работой.</p>
+                                    <p class="review__slider_name">Валерка.</p>
+                                    <p class="review__slider_city">Деревня Каменная горка</p>
+                                </div>
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
                 </div>
             </div>
         </section>
@@ -396,16 +476,20 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__wrapper wrapper">
+            <div class="footer__logo"><img class="footer__logo_img" src="./src/img/logo.svg" alt=""> «ЕвроБурСервис»
+            </div>
             <div class="footer__contact">
                 <p class="footer__contact_title">Наши контакты:</p>
                 <p class="footer__contact_link"><a href="tel:+375(44)7000415">+375 (44) 7000 415</a> <a href=""><img
                             src="./src/img/viber.svg" alt="Viber"></a>
                     <a href=""><img src="./src/img/telegram.svg" alt="telegram"></a>
                 </p>
-                <p class="footer__contact_adress">г.Минск, проезд Масюковщина 4, каб. 307</p>
+                <p class="footer__contact_adress"><img src="./src/img/location-ico-footer.svg" alt=""> г.Минск, проезд
+                    Масюковщина 4, каб. 307</p>
                 <p class="footer__contact_unp">«ЕвроБурСервис»
                     УНП 193324612 </p>
             </div>
+
             <div class="footer__working-mode">
                 <p class="footer__working_title">Режим работы:</p>
                 <!-- <p class="footer__working_img"></p> -->

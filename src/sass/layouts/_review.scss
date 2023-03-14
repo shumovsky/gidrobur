@@ -18,6 +18,7 @@
     // background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
+
 .review__text_slider-content {
     display: grid;
     grid-template-columns: repeat(4, 23%);
@@ -25,7 +26,11 @@
     padding-top: 13rem;
 
     @include media-mobile {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, 32rem);
+        width: 32rem;
+        margin: 0 auto;
+        grid-column-gap: 5rem;
+        display: none;
     }
 }
 
@@ -64,4 +69,36 @@
 .review__slider_city {
     font-weight: 700;
     margin-top: 0;
+}
+
+.review__slider {
+    margin-top: 10rem;
+}
+
+.swiper-slide {
+    width: 38rem;
+    padding: 10px 0;
+}
+
+.review__slider-container {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 10px 2px rgba(163, 195, 207, 0.7);
+    border-radius: 10px;
+    width: 33rem;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.review_slider__content {
+    background: #FFFFFF;
+    border: 1px solid rgba(163, 195, 207, 0.7);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 3.7rem 1.5rem 9rem;
+}
+
+.review__slider_text {
+    padding-bottom: 1.6rem;
 }

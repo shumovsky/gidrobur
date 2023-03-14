@@ -1,6 +1,11 @@
 .footer {
     background: $bg-color;
     padding-bottom: 3rem;
+
+    @include media-mobile {
+        background-color: #3C91D2;
+        ;
+    }
 }
 
 .footer__wrapper {
@@ -62,6 +67,10 @@
 
 .footer__working-mode {
     color: $color-light;
+
+    @include media-mobile {
+        grid-row: 3/4;
+    }
 }
 
 .footer__working_time {
@@ -78,7 +87,13 @@
 
 .footer__form {
     color: $color-light;
-    grid-row: 1/2;
+
+    @include media-mobile {
+        grid-row: 1/2;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
 }
 
 .footer__form_title {
@@ -100,4 +115,30 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     max-width: 32rem;
     row-gap: .6rem;
+
+    @include media-mobile {
+        margin: 0 auto;
+    }
+}
+
+.footer__logo {
+    display: none;
+
+    @include media-mobile {
+        display: block;
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: $color-light;
+        display: grid;
+        grid-template-columns: 20% 69%;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+}
+
+.footer__logo_img {
+    justify-self: end;
+    width: 70%;
 }
